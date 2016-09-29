@@ -55,10 +55,8 @@ Gap
 ###
 
 #. As customer requirement, change current fields "mobile" display name as customer rank.and display customer rank and salesperson in contact/customer list view.
-
 #. Display rate and salesperson in leads&opportunity list view, position should be on front.
-
-#. Add following function.
+#. Add following function
     * Catch all receipt list(to: and CC: )from incoming email.
     * And display in related  message screen.
     * User can reply to these address list according to their selection.
