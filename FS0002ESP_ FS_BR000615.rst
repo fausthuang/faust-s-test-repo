@@ -1,0 +1,86 @@
+#####################################
+Espressif contact&message enhancement
+#####################################
+
++----------------------------+----------------------------------------------------+-----------------+
+| **Document #**             | **Title**                                          | **Date**        |
+|                            |                                                    |                 |
+| FS0002ESP                  | Espressif contact&message enhancement              | 2016/09/29      |
++----------------------------+----------------------------------------------------+-----------------+
+| **Customer/Factory**       | **Project / Phase**                                | **Reference**   |
+|                            |                                                    |                 |
+| Espressif                  | Espressif / 4                                      | BR000615        |
++----------------------------+----------------------------------------------------+-----------------+
+
+.. topic:: Overview
+
+    This document is a **Functional Specification** for Odoo ERP implementation projects.
+
+    * Maintainer: Shanghai Elico Limited (contact@elico-corp.com).
+    * Distribution list: this documentation is **strictly confidential** and 
+      should only be distributed for internal usage and restricted distribution 
+      list.
+    * Copyright: All rights reserved for Elico Corp since 2010 unless specified.
+    * If you have come across that documentation by accident, please delete any 
+      copy of it and do not distribute.
+    
+.. contents:: Table of contents
+    :depth: 4
+    
+
+Introduction
+############
+
+
+
+
+Customer Story
+##############
+
+#. Add rank level for their customer and display rank and salesperson in contact list view.
+#. Display rate and salesperson for leads and opportunity in leads&opp list view.
+#. Need mass mailing function.
+#. Catch all receipt list (to: and CC:) from incoming email, and display in related  message screen. user can reply to these address list according to their selection. User also can add new follower from this list. 
+
+Scenario
+########
+
+#. No customer rank in Odoo now.
+#. Odoo have rate for leads and opportunity's priority.
+#. Odoo have such function.No development needed.
+#. Standard Odoo just has "reply to follower" and stores only sender's address.Other receipts are not included, except followers.
+
+
+Gap
+###
+
+#. As customer requirement, change current fields "mobile" display name as customer rank.and display customer rank and salesperson in contact/customer list view.
+#. Display rate and salesperson in leads&opportunity list view, position should be on front.
+#. Add following function
+    * Catch all receipt list(to: and CC: )from incoming email.
+    * And display in related  message screen.
+    * User can reply to these address list according to their selection.
+    * User also can add new follower from this list.
+    * It need a new table in odoo to store latest mail address(except the follower) for incoming or send out message.
+
+
+
+
+
+Revision History
+****************
+=========== =============== =============================================== ===================
+Rev.        Date            Description                                     Requested By
+=========== =============== =============================================== ===================
+1.0         2016/09/29      Initial Release                                 Faust Huang
+=========== =============== =============================================== ===================
+
+Contact
+*******
+
+If you have any question concerning this document, you can contact:
+
+- `Shanghai Elico Limited <mailto:contact@elico-corp.com>`__
+- `Eric Caudal (Project Sponsor) <mailto:eric.caudal@elico-corp.com>`__
+- `Faust Huang (Project Manager) <mailto:faust.huang@elico-corp.com>`__
+- `Noah Wang (Technical Manager) <mailto:Noah.Wang@elico-corp.com>`__
